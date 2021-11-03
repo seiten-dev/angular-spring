@@ -6,3 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     tty: true
+    volumes:
+      - ./server:/app:cached
+    ports:
+      - "8081:8080"
+    working_dir: /app
