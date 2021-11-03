@@ -1,5 +1,10 @@
 # angular-spring
+## 概要
+- spring boot × spring bootで簡易アプリを作成する
+ - アプリの詳細が決まり次第詳細に記載する
+
 ## 環境
+- TBD
 
 ## Gradleプロジェクトの作成
 - [spring initializr](https://start.spring.io/)へアクセス
@@ -24,4 +29,24 @@ pwd
 /{任意のパス}/angular-spring
 
 mkdir server
+```
+
+# アプリのビルド
+- appコンテナを起動後に、以下のコマンドを実行する
+ - TODO: shell化してbuildできるようにしたい
+
+```sh
+cd api-sample
+
+sh gradlew build
+
+# 以下が表示されると成功。失敗する場合は原因を改修し再実行すること
+BUILD SUCCESSFUL in 2m 21s
+
+```
+
+# アプリの起動
+
+```sh
+java -jar api-sample/build/libs/api-sample-0.0.1-SNAPSHOT.jar 
 ```
